@@ -9,7 +9,7 @@ app = Flask(__name__, template_folder='html', static_folder='css')
 # Configure BigQuery client
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "service-account-key.json"
 client = bigquery.Client()
-TABLE_ID = "johanesa-playground-326616.putra_poc.aq_events" # Replace with your actual project ID, dataset ID, and table ID
+TABLE_ID = "project_id.dataset_id.table_id" # Replace with your actual project ID, dataset ID, and table ID
 
 @app.route('/')
 def index():
